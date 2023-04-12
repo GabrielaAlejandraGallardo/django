@@ -1,0 +1,20 @@
+{% extends 'layout/base.html' %}
+<!--Colocamos así nomas porque la base esta en un archivo py-->
+{% block 'title' %} Inicio {% endblock %}
+{% block 'content' %}
+<h1>Bienvenido a tu gestor personal</h1>
+<div class="cards">
+{#<div class="card" > creamos estas clases en el enlace para diminuir la cantidad de código#}
+        <a href="{% url  'contact' %}"class="card" > Contactos  </a> 
+      
+    {# </div>#}
+
+    {#<div class="card">#}
+        <a href="{% url  'todo' %}" class="card" > Tareas  </a> 
+      
+    
+    {# </div>#}
+</div>
+
+
+{% endblock %}

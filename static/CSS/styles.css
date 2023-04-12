@@ -1,0 +1,236 @@
+:root{/*definimos variables*/
+--color-primary: rgb(46, 162, 201);
+--color-secondary:lightblue;
+--color-text: #666;
+--font-main:GODOFWAR;
+--font-text:take_looks;
+}
+/*Main setting*/
+
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: var(--font-text);
+color: var(--color-text);
+}
+@font-face {
+    font-family: GODOFWAR;
+    src: url("static\fonts\godofwar\GODOFWAR.TTF");
+}
+@font-face {
+    font-family: take_looks;
+    src: url("static\fonts\take_looks\Take Looks.ttf");
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--font-main);
+    
+}
+
+
+/*End main setting*/
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/*layout setting*/
+nav{
+display:flex;
+justify-content: center;
+align-items: center;
+width: 100vw;
+height: 80px;
+background-color: var(--color-primary);
+}
+nav ul{
+    list-style-type: none;/*qiutamos los puntos al menu*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+
+    }
+    
+nav ul li a{
+   text-decoration: none;/*quitamos el subrayado al enlace*/
+   color:aliceblue;
+   text-transform: uppercase;
+   font-family: var(--font-main);
+   padding: 10px;
+}    
+nav ul li a:hover{color:var(--color-text);
+
+}
+
+
+h1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+  
+   
+.lista{
+    display: grid;
+    flex-direction: column;
+    border: 1px solid var(--color-text);
+    /*border-radius: 10px;*/
+    width: 40vw;
+    margin-left: 600px;
+    list-style-type: none;
+}
+
+.lista li{
+    padding: 15px;
+    width: 100%;
+    border-bottom: 1px solid var(--color-text);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+padding: 5px 10px;
+text-align: center;
+text-decoration: none;
+}
+
+.btn-detail{
+background-color: var(--color-primary);
+color: rgb(245, 248, 241);
+}
+.btn-detail:hover{
+    background-color: aliceblue;
+    color: var(--color-primary);
+}
+.btn-edit{
+background-color: rgb(220, 220, 100);
+color: aliceblue
+
+}
+.btn-edit:hover{
+    background-color: aliceblue;
+    color: var(--color-primary);
+}
+.btn-delete{
+background-color: rgb(233, 91, 91);
+color: aliceblue;
+}
+.btn-delete:hover{
+    background-color: aliceblue;
+    color: var(--color-primary);
+}
+.l {background-color: rgb(167, 180, 238); 
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin-left: 600px;
+}
+
+#letra{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px;
+    
+}
+#letra:hover{
+        color: rgb(219, 207, 77);
+        font-size: 45px;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin-left: 500px;
+    padding: 30px;
+}
+.search-bar{
+    background-color: rgb(167, 180, 238); 
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin-left: 30px;
+
+
+}
+
+.btn-search{
+    background-color: var(--color-primary);
+    color: antiquewhite;
+    width: 55px;
+    outline: none;
+    box-shadow: 0;
+    cursor: pointer;
+    padding-left: 10px;
+    
+}
+.btn-search:hover{
+    background-color: aliceblue;
+    color: var(--color-primary);
+
+}
+.aux-btn{
+width: 10%;
+display: flex;
+justify-content: flex-start;
+margin: 10px;
+margin-left: 600px;
+
+}
+
+.aux-btn a{
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+
+/*end layut se
+tting*/
+.alert-success{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(14, 179, 124);
+    color: aliceblue;
+}
+
+
+/*index settings*/
+
+.cards{
+display: flex;
+justify-content: center;
+
+}
+.card{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(241, 232, 232);
+    margin: 20px;
+    background-color: var(--color-primary);
+    color: aliceblue;
+    text-decoration: none;
+}
+.card:hover{
+    background-color: rgb(216, 207, 90);
+}
+/*
+.card a{
+  color: aliceblue;
+  text-decoration: none;
+}*/
+
+/*end settings*/
+
+

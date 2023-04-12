@@ -1,0 +1,21 @@
+{% extends 'layout/base.html'%}
+{% block 'title' %} Contacto {{contact.name}}
+ {% endblock %}
+{% block 'content' %}
+
+<span class="aux-btn"><a href="{% url 'contact' %}">Volver atrás</a>
+</span>
+<ul class="lista">
+
+  <li><b>Nombre:</b>{{ contact.name }}  </li>
+  <li> <b>Apellido:</b>{{ contact.last_name }}  </li>
+  <li><b>Telefono:</b> {{ contact.phone }}  </li>
+  <li> <b>Móvil:</b>{{ contact.movile }}  </li>
+  <li><b>Email:</b> {{ contact.emal }}  </li>
+  <li><b>Compañia:</b> {{ contact.company }}  </li>
+  <li><b>Fecha de creación:</b> {{ contact.date }}  </li>
+  <li><b>Notas:</b> {{ contact.notes }}  </li>
+
+
+</ul>
+{% endblock %}
